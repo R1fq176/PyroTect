@@ -2,7 +2,7 @@ import streamlit as st
 
 def main():
     st.title("Pyrotect")
-    st.write {
+    st.subtitle {
         "Telpon damkar 113 untuk panggilan darurat kebakaran!!"
     }
     
