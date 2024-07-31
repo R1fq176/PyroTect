@@ -27,7 +27,7 @@ def main():
 "}"
 
 "void loop() {"
-  "// Read temperature and humidity from DHT11""
+  "// Read temperature and humidity from DHT11"
   "float h = dht.readHumidity();"
   "float t = dht.readTemperature();"
 
