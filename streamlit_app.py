@@ -8,25 +8,25 @@ def main():
         "Berikut code untuk deteksi kebakaran tipe file .ino membutuhkan Arduino IDE Software; sensor DHT 11 dan MQ 135; ESP32 dan USB; small board dan wire cable"
     }
     st.write {
-#include <Adafruit_Sensor.h>
-#include <DHT.h>
-#include <DHT_U.h>
-#include <MQ135.h>
+"#include <Adafruit_Sensor.h>"
+"#include <DHT.h>"
+"#include <DHT_U.h>"
+"#include <MQ135.h>"
 
-// Pin definitons
-#define DHTPIN 13      // Pin where the DHT11 is connected
-#define DHTTYPE DHT11 // Define the type of DHT sensor
-#define MQ135PIN 15   // Pin where the MQ135 is connected
+"// Pin definitons"
+"#define DHTPIN 13      // Pin where the DHT11 is connected"
+"#define DHTTYPE DHT11 // Define the type of DHT sensor"
+"#define MQ135PIN 15   // Pin where the MQ135 is connected"
 
-DHT dht(DHTPIN, DHTTYPE);
-MQ135 mq135_sensor(MQ135PIN);
+"DHT dht(DHTPIN, DHTTYPE);"
+"MQ135 mq135_sensor(MQ135PIN);"
 
-void setup() {
-  Serial.begin(115200);
-  dht.begin();
-}
+"void setup() {"
+  "Serial.begin(115200);"
+  "dht.begin();"
+"}"
 
-void loop() {
+"void loop() {
   // Read temperature and humidity from DHT11
   float h = dht.readHumidity();
   float t = dht.readTemperature();
@@ -58,7 +58,7 @@ void loop() {
   }
 
   delay(2000); // Wait a few seconds between measurements
-}
+}"
 
     }
     
