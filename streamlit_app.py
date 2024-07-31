@@ -5,7 +5,7 @@ def main():
     st.subheader("Telpon damkar 113 untuk panggilan darurat kebakaran!!")
     
     st.write("Berikut code untuk deteksi kebakaran tipe file .ino membutuhkan Arduino IDE Software; sensor DHT 11 dan MQ 135; ESP32 dan USB; small board dan wire cable")
-    st.write("#include <Adafruit_Sensor.h>"
+    code_program = "#include <Adafruit_Sensor.h>"
 "#include <DHT.h>"
 "#include <DHT_U.h>"
 "#include <MQ135.h>"
@@ -55,8 +55,9 @@ def main():
   "}"
 
   "delay(2000); // Wait a few seconds between measurements"
-"}")
-    
+"}"
+
+st.write(code_program)
     )
 
 if __name__ == "__main__":
