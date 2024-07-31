@@ -2,7 +2,9 @@ import streamlit as st
 
 def main():
     st.title("Pyrotect")
-    st.write("Telpon damkar "113" untuk panggilan darurat kebakaran!!")
+    st.write{
+        " Telpon damkar "113" untuk panggilan darurat kebakaran!! "
+    }
     
     st.write {
         "Berikut code untuk deteksi kebakaran tipe file .ino membutuhkan Arduino IDE Software; sensor DHT 11 dan MQ 135; ESP32 dan USB; small board dan wire cable"
