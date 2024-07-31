@@ -2,8 +2,8 @@ import streamlit as st
 
 def main():
     st.title("Pyrotect")
-    st.write{
-        " Telpon damkar "113" untuk panggilan darurat kebakaran!! "
+    st.write {
+        "Telpon damkar 113 untuk panggilan darurat kebakaran!!"
     }
     
     st.write {
