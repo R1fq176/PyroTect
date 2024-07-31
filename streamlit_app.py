@@ -8,7 +8,8 @@ def main():
         "Berikut code untuk deteksi kebakaran tipe file .ino membutuhkan Arduino IDE Software; sensor DHT 11 dan MQ 135; ESP32 dan USB; small board dan wire cable"
     }
     st.write {
-        "#include <Adafruit_Sensor.h>
+        "
+#include <Adafruit_Sensor.h>
 #include <DHT.h>
 #include <DHT_U.h>
 #include <MQ135.h>
@@ -58,7 +59,8 @@ void loop() {
   }
 
   delay(2000); // Wait a few seconds between measurements
-}"
+}
+"
     }
     
     )
