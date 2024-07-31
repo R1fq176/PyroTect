@@ -1,5 +1,5 @@
-import Adafruit_DHT
-import Adafruit_ADS1x15
+
+
 import time
 import streamlit as st
 
