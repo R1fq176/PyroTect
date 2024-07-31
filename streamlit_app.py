@@ -3,19 +3,20 @@ import streamlit as st
 def main():
     st.title("Pyrotect")
     st.write("Telpon damkar "113" untuk panggilan darurat kebakaran!!")
-
-    # Create a sample file content
-    sample_text = """Download program deteksi kebakaran dengan berbagai alat : Arduino IDE Software ; sensor DHT 11 dan sensor MQ 135 ; ESP32 ; Small Board; Kabel"""
     
-    # Convert the text to bytes
-    sample_text_bytes = sample_text.encode('utf-8')
+    # Path to your .ino file
+    file_path = "Final_ProjectICG3.ino"
+
+    # Read the .ino file
+    with open(file_path, "rb") as file:
+        file_data = file.read()
 
     # Provide a button to download the file
     st.download_button(
-        label="Download program",
-        data=sample_text_bytes,
-        file_name="",
-        mime="text/plain"
+        label="Download Final_ProjectICG3.ino",
+        data=file_data,
+        file_name="Final_ProjectICG3.ino",
+        mime="application/octet-stream"
     )
 
 if __name__ == "__main__":
